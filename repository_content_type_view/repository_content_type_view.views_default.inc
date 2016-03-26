@@ -32,9 +32,9 @@ function repository_content_type_view_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'field_repo_repository' => 'field_repo_repository',
-    'edit_node' => 'field_repo_repository',
     'field_repo_link' => 'field_repo_link',
+    'edit_node' => 'field_repo_repository',
+    'field_repo_repository' => 'field_repo_repository',
     'field_repo_city' => 'field_repo_city',
     'field_repo_state' => 'field_repo_state',
     'field_repo_country' => 'field_repo_country',
@@ -42,7 +42,7 @@ function repository_content_type_view_views_default_views() {
   );
   $handler->display->display_options['style_options']['default'] = 'field_repo_repository';
   $handler->display->display_options['style_options']['info'] = array(
-    'field_repo_repository' => array(
+    'field_repo_link' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -54,7 +54,7 @@ function repository_content_type_view_views_default_views() {
       'separator' => '',
       'empty_column' => 0,
     ),
-    'field_repo_link' => array(
+    'field_repo_repository' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -90,14 +90,15 @@ function repository_content_type_view_views_default_views() {
       'empty_column' => 0,
     ),
   );
-  /* Field: Content: Repository */
-  $handler->display->display_options['fields']['field_repo_repository']['id'] = 'field_repo_repository';
-  $handler->display->display_options['fields']['field_repo_repository']['table'] = 'field_data_field_repo_repository';
-  $handler->display->display_options['fields']['field_repo_repository']['field'] = 'field_repo_repository';
-  $handler->display->display_options['fields']['field_repo_repository']['label'] = '';
-  $handler->display->display_options['fields']['field_repo_repository']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_repo_repository']['alter']['text'] = '<a href="[field_repo_link]">[field_repo_repository]</a>';
-  $handler->display->display_options['fields']['field_repo_repository']['element_label_colon'] = FALSE;
+  /* Field: Content: Repo link */
+  $handler->display->display_options['fields']['field_repo_link']['id'] = 'field_repo_link';
+  $handler->display->display_options['fields']['field_repo_link']['table'] = 'field_data_field_repo_link';
+  $handler->display->display_options['fields']['field_repo_link']['field'] = 'field_repo_link';
+  $handler->display->display_options['fields']['field_repo_link']['label'] = '';
+  $handler->display->display_options['fields']['field_repo_link']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_repo_link']['alter']['text'] = '<a href="[field_repo_link]">[field_repo_repository]</a>[edit_node]';
+  $handler->display->display_options['fields']['field_repo_link']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_repo_link']['empty'] = '[field_repo_repository][edit_node]';
   /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
@@ -106,15 +107,13 @@ function repository_content_type_view_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['exclude'] = TRUE;
   $handler->display->display_options['fields']['edit_node']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['edit_node']['text'] = '&nbsp;&nbsp;E';
-  /* Field: Content: Repo link */
-  $handler->display->display_options['fields']['field_repo_link']['id'] = 'field_repo_link';
-  $handler->display->display_options['fields']['field_repo_link']['table'] = 'field_data_field_repo_link';
-  $handler->display->display_options['fields']['field_repo_link']['field'] = 'field_repo_link';
-  $handler->display->display_options['fields']['field_repo_link']['label'] = 'Repository';
-  $handler->display->display_options['fields']['field_repo_link']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_repo_link']['alter']['text'] = '<a href="[field_repo_link]">[field_repo_repository]</a>[edit_node]';
-  $handler->display->display_options['fields']['field_repo_link']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_repo_link']['empty'] = '[field_repo_repository][edit_node]';
+  /* Field: Content: Repository */
+  $handler->display->display_options['fields']['field_repo_repository']['id'] = 'field_repo_repository';
+  $handler->display->display_options['fields']['field_repo_repository']['table'] = 'field_data_field_repo_repository';
+  $handler->display->display_options['fields']['field_repo_repository']['field'] = 'field_repo_repository';
+  $handler->display->display_options['fields']['field_repo_repository']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_repo_repository']['alter']['text'] = '<a href="[field_repo_link]">[field_repo_repository]</a>[edit_node]';
+  $handler->display->display_options['fields']['field_repo_repository']['element_label_colon'] = FALSE;
   /* Field: Content: City */
   $handler->display->display_options['fields']['field_repo_city']['id'] = 'field_repo_city';
   $handler->display->display_options['fields']['field_repo_city']['table'] = 'field_data_field_repo_city';
@@ -133,6 +132,10 @@ function repository_content_type_view_views_default_views() {
   $handler->display->display_options['fields']['field_repo_lcnaf']['field'] = 'field_repo_lcnaf';
   $handler->display->display_options['fields']['field_repo_lcnaf']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_repo_lcnaf']['alter']['text'] = '<a href="[field_repo_lcnaf]" target="_blank">LCNAF</a>';
+  /* Sort criterion: Content: Repository (field_repo_repository) */
+  $handler->display->display_options['sorts']['field_repo_repository_value']['id'] = 'field_repo_repository_value';
+  $handler->display->display_options['sorts']['field_repo_repository_value']['table'] = 'field_data_field_repo_repository';
+  $handler->display->display_options['sorts']['field_repo_repository_value']['field'] = 'field_repo_repository_value';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';

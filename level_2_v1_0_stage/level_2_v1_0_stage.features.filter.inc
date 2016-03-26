@@ -92,6 +92,13 @@ function level_2_v1_0_stage_filter_default_formats() {
         'status' => 1,
         'settings' => array(),
       ),
+      'qtip' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(
+          'instance' => 'general_instance',
+        ),
+      ),
     ),
   );
 

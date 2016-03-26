@@ -82,6 +82,11 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['field_outbound_link']['id'] = 'field_outbound_link';
   $handler->display->display_options['fields']['field_outbound_link']['table'] = 'field_data_field_outbound_link';
   $handler->display->display_options['fields']['field_outbound_link']['field'] = 'field_outbound_link';
+  /* Sort criterion: Nodequeue: Position */
+  $handler->display->display_options['sorts']['position']['id'] = 'position';
+  $handler->display->display_options['sorts']['position']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['sorts']['position']['field'] = 'position';
+  $handler->display->display_options['sorts']['position']['relationship'] = 'nodequeue_rel';
   /* Contextual filter: Content: Sections (field_section_page_sections) */
   $handler->display->display_options['arguments']['field_section_page_sections_tid']['id'] = 'field_section_page_sections_tid';
   $handler->display->display_options['arguments']['field_section_page_sections_tid']['table'] = 'field_data_field_section_page_sections';

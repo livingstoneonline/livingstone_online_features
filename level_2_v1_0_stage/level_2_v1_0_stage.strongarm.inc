@@ -197,6 +197,7 @@ function level_2_v1_0_stage_strongarm() {
   $strongarm->name = 'menu_options_section_page';
   $strongarm->value = array(
     0 => 'main-menu',
+    1 => 'menu-topmenu',
   );
   $export['menu_options_section_page'] = $strongarm;
 
