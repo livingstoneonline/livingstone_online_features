@@ -342,6 +342,7 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['field_section_page_image']['table'] = 'field_data_field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['field'] = 'field_section_page_image';
   $handler->display->display_options['fields']['field_section_page_image']['label'] = '';
+  $handler->display->display_options['fields']['field_section_page_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_section_page_image']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_section_page_image']['alter']['text'] = '<div class="slidercontent">
 <div class="slidertitle"><a href="[field_outbound_link]" target="[field_open_new_tab]">[field_pre_title][title]</a></div><div class="sliderimg"><a href="[field_outbound_link]" target="[field_open_new_tab]">[field_section_page_image]</a></div>
@@ -357,7 +358,6 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['fields']['field_carousel_image']['table'] = 'field_data_field_carousel_image';
   $handler->display->display_options['fields']['field_carousel_image']['field'] = 'field_carousel_image';
   $handler->display->display_options['fields']['field_carousel_image']['label'] = '';
-  $handler->display->display_options['fields']['field_carousel_image']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_carousel_image']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_carousel_image']['alter']['text'] = '<div class="slidercontent">
 <div class="slidertitle"><a href="[field_outbound_link]" target="[field_open_new_tab]">[field_pre_title][title]</a></div><div class="sliderimg"><a href="[field_outbound_link]" target="[field_open_new_tab]">[field_carousel_image]</a></div>
