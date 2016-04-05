@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Islandora Solr Configuration feature.
+ */
+
+include_once 'islandora_solr_configuration.features.inc';
