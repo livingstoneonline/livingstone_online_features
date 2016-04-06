@@ -156,6 +156,9 @@ function level_2_v1_0_stage_strongarm() {
         'custom_settings' => FALSE,
       ),
       'print' => array(
+        'custom_settings' => TRUE,
+      ),
+      'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
     ),
@@ -175,6 +178,10 @@ function level_2_v1_0_stage_strongarm() {
             'visible' => TRUE,
           ),
           'full' => array(
+            'weight' => '5',
+            'visible' => TRUE,
+          ),
+          'print' => array(
             'weight' => '5',
             'visible' => TRUE,
           ),
