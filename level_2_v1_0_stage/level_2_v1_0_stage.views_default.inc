@@ -732,6 +732,21 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'our_technology' => 'our_technology',
+    'about_this_site' => 0,
+    'in_his_own_words' => 0,
+    'behind_the_scenes' => 0,
+    'life_times' => 0,
+    'resouces' => 0,
+    'level_two_nodequeue' => 0,
+  );
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Open in new tab */
   $handler->display->display_options['fields']['field_open_new_tab']['id'] = 'field_open_new_tab';
@@ -1131,6 +1146,21 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Nodequeue: Queue */
+  $handler->display->display_options['relationships']['nodequeue_rel']['id'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['table'] = 'node';
+  $handler->display->display_options['relationships']['nodequeue_rel']['field'] = 'nodequeue_rel';
+  $handler->display->display_options['relationships']['nodequeue_rel']['limit'] = 1;
+  $handler->display->display_options['relationships']['nodequeue_rel']['names'] = array(
+    'resouces' => 'resouces',
+    'about_this_site' => 0,
+    'our_technology' => 0,
+    'in_his_own_words' => 0,
+    'behind_the_scenes' => 0,
+    'life_times' => 0,
+    'level_two_nodequeue' => 0,
+  );
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Open in new tab */
   $handler->display->display_options['fields']['field_open_new_tab']['id'] = 'field_open_new_tab';
