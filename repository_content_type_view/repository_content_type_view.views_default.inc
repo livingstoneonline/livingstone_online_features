@@ -83,13 +83,14 @@ function repository_content_type_view_views_default_views() {
       'empty_column' => 0,
     ),
     'field_repo_lcnaf' => array(
-      'sortable' => 1,
+      'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
   );
+  $handler->display->display_options['style_options']['sticky'] = TRUE;
   /* Field: Content: Repo link */
   $handler->display->display_options['fields']['field_repo_link']['id'] = 'field_repo_link';
   $handler->display->display_options['fields']['field_repo_link']['table'] = 'field_data_field_repo_link';
@@ -159,6 +160,23 @@ function repository_content_type_view_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Repository (field_repo_repository) */
+  $handler->display->display_options['sorts']['field_repo_repository_value']['id'] = 'field_repo_repository_value';
+  $handler->display->display_options['sorts']['field_repo_repository_value']['table'] = 'field_data_field_repo_repository';
+  $handler->display->display_options['sorts']['field_repo_repository_value']['field'] = 'field_repo_repository_value';
+  /* Sort criterion: Content: City (field_repo_city) */
+  $handler->display->display_options['sorts']['field_repo_city_value']['id'] = 'field_repo_city_value';
+  $handler->display->display_options['sorts']['field_repo_city_value']['table'] = 'field_data_field_repo_city';
+  $handler->display->display_options['sorts']['field_repo_city_value']['field'] = 'field_repo_city_value';
+  /* Sort criterion: Content: State (field_repo_state) */
+  $handler->display->display_options['sorts']['field_repo_state_value']['id'] = 'field_repo_state_value';
+  $handler->display->display_options['sorts']['field_repo_state_value']['table'] = 'field_data_field_repo_state';
+  $handler->display->display_options['sorts']['field_repo_state_value']['field'] = 'field_repo_state_value';
+  /* Sort criterion: Content: Country (field_repo_country) */
+  $handler->display->display_options['sorts']['field_repo_country_value']['id'] = 'field_repo_country_value';
+  $handler->display->display_options['sorts']['field_repo_country_value']['table'] = 'field_data_field_repo_country';
+  $handler->display->display_options['sorts']['field_repo_country_value']['field'] = 'field_repo_country_value';
 
   /* Display: EVA Field */
   $handler = $view->new_display('entity_view', 'EVA Field', 'entity_view_1');

@@ -1,7 +1,7 @@
 name = Repository content type & view
 core = 7.x
 package = livingstone
-version = 7.x-1.3
+version = 7.x-1.4
 project = repository_content_type_view
 dependencies[] = eva
 dependencies[] = features
