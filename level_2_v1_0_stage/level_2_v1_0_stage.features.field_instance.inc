@@ -113,7 +113,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -183,7 +183,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 14,
       ),
       'print' => array(
         'label' => 'above',
@@ -264,7 +264,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 13,
       ),
       'print' => array(
         'label' => 'above',
@@ -313,7 +313,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 12,
       ),
       'print' => array(
         'label' => 'above',
@@ -362,10 +362,10 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'weight' => 10,
       ),
       'full' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 7,
       ),
       'print' => array(
         'label' => 'above',
@@ -421,7 +421,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 11,
       ),
       'print' => array(
         'label' => 'above',
@@ -472,7 +472,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 8,
       ),
       'print' => array(
         'label' => 'above',
@@ -524,7 +524,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 9,
       ),
       'print' => array(
         'label' => 'above',
@@ -577,7 +577,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -631,7 +631,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -679,10 +679,14 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'weight' => 6,
       ),
       'full' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
+        'weight' => 0,
       ),
       'print' => array(
         'label' => 'above',
@@ -751,7 +755,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -819,7 +823,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 15,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -869,7 +873,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -933,7 +937,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
           'share_services' => 'facebook,twitter,email,print,pdf online',
         ),
         'type' => 'addthis_basic_toolbox',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -986,7 +990,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 10,
       ),
       'print' => array(
         'label' => 'above',
