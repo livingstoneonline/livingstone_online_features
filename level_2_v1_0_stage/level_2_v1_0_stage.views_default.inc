@@ -1668,7 +1668,7 @@ function level_2_v1_0_stage_views_default_views() {
      <div class="hover [field_turn_off_hover]">
          <div class="info">
          <div class="pretitle">[field_pre_title]</div>
-         <div class="title">[title]</div>
+         <div class="title"> [title] </div>
          <p>[field_level_2_teaser]</p>
          <div class="lev2-photocredit">[field_level_2_photocredit]</div>
          </div>
