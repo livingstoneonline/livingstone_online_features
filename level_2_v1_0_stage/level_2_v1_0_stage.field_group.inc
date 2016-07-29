@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function level_2_v1_0_stage_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -39,7 +39,7 @@ function level_2_v1_0_stage_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_level2outbound|node|section_page|form'] = $field_group;
+  $field_groups['group_level2outbound|node|section_page|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -71,7 +71,7 @@ function level_2_v1_0_stage_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_level2|node|section_page|form'] = $field_group;
+  $field_groups['group_level2|node|section_page|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -103,7 +103,13 @@ function level_2_v1_0_stage_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_level3|node|section_page|form'] = $field_group;
+  $field_groups['group_level3|node|section_page|form'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Level 2 Fields');
+  t('Level 2 Outbound fields');
+  t('Level 3 Fields');
+
+  return $field_groups;
 }

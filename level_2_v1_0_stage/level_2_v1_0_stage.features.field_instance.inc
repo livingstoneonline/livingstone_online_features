@@ -929,14 +929,8 @@ function level_2_v1_0_stage_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'hidden',
-        'module' => 'addthis_displays',
-        'settings' => array(
-          'buttons_size' => 'addthis_32x32_style',
-          'counter_orientation' => 'horizontal',
-          'extra_css' => '',
-          'share_services' => 'facebook,twitter,email,print,pdf online',
-        ),
-        'type' => 'addthis_basic_toolbox',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 5,
       ),
       'print' => array(
