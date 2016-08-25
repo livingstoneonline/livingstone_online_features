@@ -446,23 +446,6 @@ function level_2_v1_0_stage_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_social_media_links'.
-  $field_bases['field_social_media_links'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_social_media_links',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'addthis',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'addthis',
-  );
-
   // Exported field_base: 'field_turn_off_hover'.
   $field_bases['field_turn_off_hover'] = array(
     'active' => 1,

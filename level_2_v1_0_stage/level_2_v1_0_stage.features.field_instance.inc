@@ -908,60 +908,6 @@ function level_2_v1_0_stage_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-section_page-field_social_media_links'.
-  $field_instances['node-section_page-field_social_media_links'] = array(
-    'bundle' => 'section_page',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'addthis_displays',
-        'settings' => array(
-          'buttons_size' => 'addthis_32x32_style',
-          'counter_orientation' => 'horizontal',
-          'extra_css' => '',
-          'share_services' => 'facebook,twitter,email,print,pdf online',
-        ),
-        'type' => 'addthis_basic_toolbox',
-        'weight' => 4,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
-      ),
-      'print' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_social_media_links',
-    'label' => 'social media links',
-    'required' => FALSE,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'addthis',
-      'settings' => array(),
-      'type' => 'addthis_button_widget',
-      'weight' => 9,
-    ),
-  );
-
   // Exported field_instance: 'node-section_page-field_turn_off_hover'.
   $field_instances['node-section_page-field_turn_off_hover'] = array(
     'bundle' => 'section_page',
@@ -1037,7 +983,6 @@ function level_2_v1_0_stage_field_default_field_instances() {
   t('Section Main Image');
   t('Sections');
   t('Turn off hover');
-  t('social media links');
 
   return $field_instances;
 }
