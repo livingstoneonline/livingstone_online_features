@@ -858,6 +858,12 @@ function level_2_v1_0_stage_views_default_views() {
   );
   $handler->display->display_options['filters']['field_section_page_sections_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_section_page_sections_tid']['vocabulary'] = 'site_section';
+  /* Filter criterion: Nodequeue: In queue */
+  $handler->display->display_options['filters']['in_queue']['id'] = 'in_queue';
+  $handler->display->display_options['filters']['in_queue']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['filters']['in_queue']['field'] = 'in_queue';
+  $handler->display->display_options['filters']['in_queue']['relationship'] = 'nodequeue_rel';
+  $handler->display->display_options['filters']['in_queue']['value'] = '1';
   $handler->display->display_options['block_description'] = 'banner - Spectral Imaging';
 
   /* Display: Behind the Scenes */
@@ -1419,6 +1425,12 @@ function level_2_v1_0_stage_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'section_page' => 'section_page',
   );
+  /* Filter criterion: Nodequeue: In queue */
+  $handler->display->display_options['filters']['in_queue']['id'] = 'in_queue';
+  $handler->display->display_options['filters']['in_queue']['table'] = 'nodequeue_nodes';
+  $handler->display->display_options['filters']['in_queue']['field'] = 'in_queue';
+  $handler->display->display_options['filters']['in_queue']['relationship'] = 'nodequeue_rel';
+  $handler->display->display_options['filters']['in_queue']['value'] = '1';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');

@@ -908,6 +908,147 @@ function level_2_v1_0_stage_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-section_page-field_subtitle'.
+  $field_instances['node-section_page-field_subtitle'] = array(
+    'bundle' => 'section_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 19,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'print' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_subtitle',
+    'label' => 'Subtitle',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-section_page-field_transcriptions'.
+  $field_instances['node-section_page-field_transcriptions'] = array(
+    'bundle' => 'section_page',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'double_field',
+        'settings' => array(
+          'first' => array(
+            'format' => '_none',
+            'hidden' => 0,
+            'prefix' => '',
+            'suffix' => ':&nbsp;',
+          ),
+          'second' => array(
+            'format' => '_none',
+            'hidden' => 0,
+            'prefix' => '',
+            'suffix' => '',
+          ),
+          'style' => 'inline',
+        ),
+        'type' => 'double_field_unformatted_list',
+        'weight' => 18,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'livingstone',
+        'settings' => array(),
+        'type' => 'transcript_formatter',
+        'weight' => 6,
+      ),
+      'print' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_transcriptions',
+    'label' => 'Transcriptions',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'double_field',
+      'settings' => array(
+        'first' => array(
+          'general' => array(
+            'prefix' => '',
+            'required' => 1,
+            'suffix' => '',
+          ),
+          'textfield' => array(
+            'placeholder' => 'Project ID',
+            'size' => 10,
+          ),
+        ),
+        'inline' => 1,
+        'second' => array(
+          'general' => array(
+            'prefix' => '',
+            'required' => 1,
+            'suffix' => '',
+          ),
+          'textfield' => array(
+            'placeholder' => 'Label',
+            'size' => 10,
+          ),
+        ),
+      ),
+      'type' => 'textfield_&_textfield',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-section_page-field_turn_off_hover'.
   $field_instances['node-section_page-field_turn_off_hover'] = array(
     'bundle' => 'section_page',
@@ -982,6 +1123,8 @@ function level_2_v1_0_stage_field_default_field_instances() {
   t('Public Files');
   t('Section Main Image');
   t('Sections');
+  t('Subtitle');
+  t('Transcriptions');
   t('Turn off hover');
 
   return $field_instances;
