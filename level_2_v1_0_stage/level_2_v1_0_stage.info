@@ -8,6 +8,7 @@ dependencies[] = addthis
 dependencies[] = addthis_displays
 dependencies[] = ckeditor
 dependencies[] = ctools
+dependencies[] = double_field
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = file

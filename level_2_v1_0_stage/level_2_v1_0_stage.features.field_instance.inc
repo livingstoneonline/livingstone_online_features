@@ -113,7 +113,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -183,7 +183,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'print' => array(
         'label' => 'above',
@@ -264,7 +264,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'print' => array(
         'label' => 'above',
@@ -313,7 +313,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'print' => array(
         'label' => 'above',
@@ -365,7 +365,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'print' => array(
         'label' => 'above',
@@ -421,7 +421,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'print' => array(
         'label' => 'above',
@@ -472,7 +472,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'print' => array(
         'label' => 'above',
@@ -524,7 +524,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'print' => array(
         'label' => 'above',
@@ -577,7 +577,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -631,7 +631,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -755,7 +755,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -823,7 +823,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -873,7 +873,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'print' => array(
         'label' => 'hidden',
@@ -1071,7 +1071,7 @@ function level_2_v1_0_stage_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'print' => array(
         'label' => 'above',
